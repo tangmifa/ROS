@@ -1,0 +1,8 @@
+{
+	"remoteArgs": {
+		"host": "192.168.1.229",
+		"user": "meifa",
+		"keyfile": "/home/meifa/.ssh/id_rsa",
+		"cwd": "/home/meifa/catkin_ws"
+	}
+}

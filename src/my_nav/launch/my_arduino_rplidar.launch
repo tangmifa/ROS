@@ -1,0 +1,12 @@
+<launch>
+    <master auto="start"/>
+
+    <include file="$(find rplidar_ros)/launch/rplidar.launch" />
+
+    <node name="arduino" pkg="ros_arduino_python" type="arduino_node.py" output="screen">
+        <rosparam file="$(find ros_arduino_python)/config/my_arduino_params.yaml" command="load" />
+    </node>
+
+    <node pkg="tf" type="static_transform_publisher" name="base_frame_2_laser_link" args="0.02 0.0 0.08 3.14159 0.0 0.0 /base_link /laser 50"/>
+
+</launch>

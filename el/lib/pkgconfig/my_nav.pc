@@ -1,0 +1,8 @@
+prefix=/home/meifa/catkin_ws/devel
+
+Name: my_nav
+Description: Description of my_nav
+Version: 0.0.1
+Cflags: 
+Libs: -L/home/meifa/catkin_ws/devel/lib 
+Requires: 
